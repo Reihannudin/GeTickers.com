@@ -13,20 +13,19 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('users', function (Blueprint $table) {
-            $table->id();
+        Schema::create('artists', function (Blueprint $table) {
             $table->id()->startingValue(13072013);
-            $table->string('username')->unique();
+            $table->string('name')->unique();
+            $table->string('slug')->required();
             $table->string('firstname');
             $table->string('lastname');
-            $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
-            $table->string('phone_number');
-            $table->integer('status')->nullable();
-            $table->string('status_users');
-            $table->text('address');
-            $table->rememberToken();
+            $table->string('photo');
+            $table->text('description');
+            $table->integer('favorite');
+
+// not priority       $table->integer('discography_id');
+//            $table->integer('product_id');
+//            $table->integer('tour_id');
             $table->timestamps();
         });
     }
@@ -38,6 +37,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('users');
+        Schema::dropIfExists('artists');
     }
 };
