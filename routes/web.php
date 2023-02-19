@@ -5,16 +5,17 @@ use Illuminate\Support\Facades\Route;
 Route::controller(\App\Http\Controllers\MainController::class)->group(function (){
     Route::get('/' , 'IndexPage')->name('home.all');
     Route::get('/concert' , 'ConcertPage')->name('concert.all');
-    Route::get('/events' , 'EventPage')->name('events.all');
 });
 
 Route::controller(\App\Http\Controllers\StoreController::class)->group(function (){
     Route::get('/store' , 'StoreAllProduct')->name('store.all');
-    Route::get('/store/album' , 'StoreAlbumProduct')->name('store.album');
-    Route::get('/store/collection' , 'StoreCollectionProduct')->name('store.collection');
-    Route::get('/store/merch' , 'StoreMerchProduct')->name('store.merch');
-    Route::get('/store/tour/merch' , 'StoreTourProduct')->name('store.tour.merch');
-    Route::get('/store/favorite' , 'StoreFavoriteProduct')->name('store.favorite');
+
+    Route::get('/artist/store' , 'StoreArtistAllProduct')->name('store.artist.all');
+    Route::get('/artist/store/album' , 'StoreArtistAlbumProduct')->name('store.artist.album');
+    Route::get('/artist/store/collection' , 'StoreArtistCollectionProduct')->name('store.artist.collection');
+    Route::get('/artist/store/merch' , 'StoreArtistMerchProduct')->name('store.artist.merch');
+    Route::get('/artist/store/tour/merch' , 'StoreArtistTourProduct')->name('store.artist.tour.merch');
+    Route::get('/artist/store/favorite' , 'StoreArtistFavoriteProduct')->name('store.artist.favorite');
 });
 
 Route::controller(\App\Http\Controllers\AuthController::class)->group(function (){

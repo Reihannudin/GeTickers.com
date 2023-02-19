@@ -7,24 +7,28 @@ use Illuminate\Http\Request;
 class StoreController extends Controller
 {
     public function StoreAllProduct(){
-        return view('main.component.store.all-store');
+        return view('main.layout.store');
     }
 
-    public function StoreAlbumProduct(){
-        return view('main.component.store.album-store');
+    public function StoreArtistAllProduct(){
+        return view('main.component.store.artist.all-store');
     }
 
-    public function StoreCollectionProduct(){
-        return view('main.component.store.collection-store');
-    }
-    public function StoreMerchProduct(){
-        return view('main.component.store.merch-store');
-    }
-    public function StoreTourProduct(){
-        return view('main.component.store.tour-merch-store');
+    public function StoreArtistAlbumProduct(){
+        return view('main.component.store.artist.album-store');
     }
 
-    public function StoreFavoriteProduct(){
+    public function StoreArtistCollectionProduct(){
+        return view('main.component.store.artist.collection-store');
+    }
+    public function StoreArtistMerchProduct(){
+        return view('main.component.store.artist.merch-store');
+    }
+    public function StoreArtistTourProduct(){
+        return view('main.component.store.artist.tour-merch-store');
+    }
+
+    public function StoreArtistFavoriteProduct(){
         return view('main.component.store.favorite-store');
     }
 }

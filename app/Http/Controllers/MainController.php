@@ -15,11 +15,7 @@ class MainController extends Controller
     }
 
     public function StorePage(){
-        return view('main.layout.store');
-    }
-
-    public function EventPage(){
-        return view('main.layout.event');
+        return view('main.layout.store-artist');
     }
 
 }

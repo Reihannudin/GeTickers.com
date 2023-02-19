@@ -12,7 +12,6 @@
                         <li><a class="cursor-pointer text-dark" href="{{ route('home.all') }}">Home</a></li>
                         <li><a class="cursor-pointer text-dark" href="{{ route('concert.all') }}">Concert</a></li>
                         <li><a class="cursor-pointer text-dark" href="{{route('store.all')}}">Store</a></li>
-                        <li><a class="cursor-pointer text-dark" href="{{ route('events.all') }}">Events</a></li>
                         @if(is_null(auth()->user()))
                             <li>
                                 <a href="{{ route('login.all') }}">
@@ -30,11 +29,11 @@
                                                     <div style="width: 50px ; height: 50px; border-radius: 100%">
                                                         <img class="w-100 h-100" style="border-radius: 100%" src="{{ asset('assets/img/profile/reihannudin.png') }}" alt="profile"/>
                                                     </div>
-                                                    <p class="my-auto ">{{ auth()->user()->username }}</p>
+                                                    <p class="my-auto text-dark">{{ auth()->user()->username }}</p>
                                                 </div>
                                             </div>
                                         </a>
-                                        <ul class="dropdown-menu dropdown-menu-end">
+                                        <ul class="dropdown-menu dropdown-menu-end" style="z-index:99">
                                             <li><a class="dropdown-item py-2 cursor-pointer" href=""><i
                                                         class="bx bx-user"></i><span>Profile</span></a>
                                             </li>
