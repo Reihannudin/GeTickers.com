@@ -18,8 +18,17 @@ Route::controller(\App\Http\Controllers\StoreController::class)->group(function 
 });
 
 Route::controller(\App\Http\Controllers\AuthController::class)->group(function (){
-   Route::get('/login' , 'LoginAll')->name('login.all');
-    Route::get('/signup' , 'SignUpAll')->name('signup.all');
+
+//    Login
+    Route::get('/login' , 'LoginAll')->name('login.all');
+    Route::post('/login' , 'Login')->name('login.store');
+
+//    Register
+    Route::get('/register' , 'RegisterAll')->name('register.all');
+    Route::post('/register' , 'Register')->name('register.store');
+
+//    Logout
+    Route::get('/user/logout' , 'Logout')->name('logout');
 });
 
 Route::controller(\App\Http\Controllers\ConcertController::class)->group(function (){

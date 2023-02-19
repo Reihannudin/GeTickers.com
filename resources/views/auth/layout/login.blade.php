@@ -10,7 +10,7 @@
                     <div class="card-body col-11  mx-auto">
                         <h4 class="card-title mt-3 text-center">Login to Your Account</h4>
                         <p class="text-center">Hey there! Welcome back.</p>
-                        <form id="loginForm" class="row text-start g-3" method="POST" action=""  enctype="multipart/form-data">
+                        <form id="loginForm" class="row text-start g-3" method="POST" action="{{ route('login.store') }}"  enctype="multipart/form-data">
                             @csrf
                             <div class="col-12 form-group">
                                 <label for="inputEmailAddress" class="form-label">Email Address</label>
@@ -37,6 +37,8 @@
                             <div class="col-md-6 text-end"><a href="">Forgot
                                     Password ?</a>
                             </div>
+                            <div class="col-12 font-14 pt-0 mt-0 mb-2 text-center"><a href="{{ route('register.all') }}">Doesn't have account? , create your account now!!</a>
+                            </div>
                             <div class="col-12">
                                 <div class="d-grid">
                                     <button type="submit" class="btn btn-dark"><i
@@ -51,5 +53,88 @@
         </div>
     </div>
 </section>
+
+    <!--end wrapper-->
+    <!-- Bootstrap JS -->
+    <script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
+    <!--plugins-->
+    <script src="{{ asset('assets/js/jquery.min.js') }}"></script>
+    <script src="{{ asset('assets/js/app.js') }}"></script>
+    <!--Password show & hide js -->
+
+    <!--Password show & hide js -->
+    <script>
+        $(document).ready(function () {
+            $("#show_hide_password a").on('click', function (event) {
+                event.preventDefault();
+                if ($('#show_hide_password input').attr("type") == "text") {
+                    $('#show_hide_password input').attr('type', 'password');
+                    $('#show_hide_password i').addClass("bx-hide");
+                    $('#show_hide_password i').removeClass("bx-show");
+                } else if ($('#show_hide_password input').attr("type") == "password") {
+                    $('#show_hide_password input').attr('type', 'text');
+                    $('#show_hide_password i').removeClass("bx-hide");
+                    $('#show_hide_password i').addClass("bx-show");
+                }
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function (){
+            $('#loginForm').validate({
+                rules: {
+                    email: {
+                        required : true,
+                    },
+                    password: {
+                        required : true,
+                        // min: 8,
+                    },
+                },
+                messages :{
+                    email: {
+                        required : 'Please Enter Your Email',
+                    },
+                    password: {
+                        required : 'Please Enter Your Password',
+                        // min : 'Password at least 8 letter',
+                    },
+                },
+                errorElement : 'span',
+                errorPlacement: function (error,element) {
+                    error.addClass('invalid-feedback');
+                    element.closest('.form-group').append(error);
+                },
+                highlight : function(element, errorClass, validClass){
+                    $(element).addClass('is-invalid');
+                },
+                unhighlight : function(element, errorClass, validClass){
+                    $(element).removeClass('is-invalid');
+                },
+            });
+        });
+
+    </script>
+
+    <script>
+        @if(Session::has('message'))
+        var type = "{{ Session::get('alert-type','info') }}"
+        switch (type) {
+            case 'info':
+                toastr.info(" {{ Session::get('message') }} ");
+                break;
+            case 'success':
+                toastr.success(" {{ Session::get('message') }} ");
+                break;
+            case 'warning':
+                toastr.warning(" {{ Session::get('message') }} ");
+                break;
+            case 'error':
+                toastr.error(" {{ Session::get('message') }} ");
+                break;
+        }
+        @endif
+    </script>
 
 @endsection
