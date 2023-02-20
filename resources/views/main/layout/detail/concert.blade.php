@@ -5,7 +5,7 @@
         <div class="col-12">
             @include('main.component.detail.concert.banner')
             <div class="py-2 col-12">
-                <ul class="nav mx-4 pb-0 mb-0" style="font-size: 16px">
+                <ul class="nav col-11 mx-auto pb-0 mb-0" style="font-size: 16px">
                     <li class="nav-item">
                         <a class="nav-link text-dark active fw-bolder" aria-current="page" href="#">Summary</a>
                     </li>
@@ -24,8 +24,8 @@
 
                 </ul>
                 <hr class="mt-1 w-75 pt-0" />
-                <div id="summary" class="col-12 row">
-                    <div class="col-8 mx-5 py-3">
+                <div id="summary" class="col-11 mx-auto row">
+                    <div class="col-7 me-4 py-3">
                         <div class="d-flex mb-2 gap-2 col-12">
                             <span class="font-13">Concert</span>
                             <i>0</i>
@@ -39,7 +39,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-3 py-3">
+                    <div class="col-4 ms-5 py-3">
                         <div class="text-end">
                             <span class="font-14">
                                 Start From
@@ -52,12 +52,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-1">
 
-                    </div>
                 </div>
                 <hr class="col-11 mx-auto"/>
-                <div id="highlight" class="col-12 mx-5 mt-5 mb-3 row">
+                <div id="highlight" class="col-11 mx-auto mt-5 mb-3 row">
                     <div class="mx-0 px-0">
                         <div class="mx-2 px-2">
                             <h3>Highlight</h3>
@@ -89,7 +87,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="package" class="col-12 my-3 mx-5 row">
+                <div id="package" class="col-11 mx-auto my-3 row">
                     <div class="col-12">
                         <div class="col-10 ">
                             <h3 class="fw-bolder pb-3">Package</h3>
@@ -133,9 +131,9 @@
                                                     </li>
                                                 </ul>
                                                 <hr class="col-12" />
-                                                <div class="d-flex pb-3 justify-content-between">
-                                                    <h5 class="text-danger mt-3 fw-bolder">IDR.1.350.000</h5>
-                                                    <button class="btn btn-outline-dark px-4">
+                                                <div class="d-flex pb-2 justify-content-between">
+                                                    <h5 class="text-danger mt-2 fw-bolder">IDR.1.350.000</h5>
+                                                    <button style="height: 40px" class="btn py-0 my-auto btn-outline-dark px-4">
                                                         Select Ticket
                                                     </button>
                                                 </div>
@@ -174,9 +172,9 @@
                                                     </li>
                                                 </ul>
                                                 <hr class="col-12" />
-                                                <div class="d-flex pb-3 justify-content-between">
-                                                    <h5 class="text-danger mt-3 fw-bolder">IDR.1.350.000</h5>
-                                                    <button class="btn btn-outline-dark px-4">
+                                                <div class="d-flex pb-2 justify-content-between">
+                                                    <h5 class="text-danger mt-2 fw-bolder">IDR.1.350.000</h5>
+                                                    <button style="height: 40px" class="btn py-0 my-auto btn-outline-dark px-4">
                                                         Select Ticket
                                                     </button>
                                                 </div>
@@ -215,18 +213,19 @@
                                                     </li>
                                                 </ul>
                                                 <hr class="col-12" />
-                                                <div class="d-flex pb-3 justify-content-between">
-                                                    <h5 class="text-danger mt-3 fw-bolder">IDR.1.350.000</h5>
-                                                    <button class="btn btn-outline-dark px-4">
+                                                <div class="d-flex pb-2 justify-content-between">
+                                                    <h5 class="text-danger mt-2 fw-bolder">IDR.1.350.000</h5>
+                                                    <button style="height: 40px" class="btn py-0 my-auto btn-outline-dark px-4">
                                                         Select Ticket
                                                     </button>
                                                 </div>
                                             </div>
                                         </div>
+
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-3">
+                            <div class="col-4">
                                 <div class="col-12 card px-3 py-3" style="border-radius: 12px">
                                     <h5 class="my-2">Venue</h5>
                                     <div class="col-12 mb-3 mt-2 mx-auto">
@@ -238,10 +237,10 @@
                         </div>
                     </div>
                 </div>
-                <div id="location" class="col-12 mx-5 my-3">
+                <div id="location" class="col-11 mx-auto my-3">
                     <div class="col-12">
                         <h3 class="mt-5 fw-bolder mb-3">Locations</h3>
-                        <div class="col-11">
+                        <div class="col-12">
                             <div class="container-fluid" >
                                 <div class="position-relative col-12 map-responsive" style="border-radius: 12px; border: 1px solid #eeeeee ">
                                     <img class="w-100"  style="height: 250px ; border-radius:12px ; border: 1px solid #eeeeee " src="{{ asset('assets/img/component/map.webp') }}"/>
@@ -287,7 +286,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="other" class="col-12 pb-4 mx-5 my-3">
+                <div id="other" class="col-11 mx-auto pb-4 my-3">
                     <div class="col-12 row justify-content-between">
                         <div class="col-5">
                             <h3 class="mt-5 mb-3">Description</h3>

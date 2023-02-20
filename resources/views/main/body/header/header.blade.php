@@ -8,7 +8,7 @@
             </div>
             <div>
                 <div style="height: 0px">
-                    <ul class="d-flex align-items-center mx-0  list-unstyled gap-4" style="height: 0px; font-size: 17px">
+                    <ul class="d-flex align-items-center mx-0  list-unstyled gap-3" style="height: 0px; font-size: 17px">
                         <li><a class="cursor-pointer mx-0 text-dark" href="{{ route('home.all') }}">Home</a></li>
                         <li><a class="cursor-pointer mx-0 text-dark" href="{{ route('concert.all') }}">Concert</a></li>
                         <li><a class="cursor-pointer mx-0 text-dark" href="{{route('store.all')}}">Store</a></li>
@@ -26,9 +26,9 @@
                                         <a class="d-flex align-items-center nav-link dropdown-toggle dropdown-toggle-nocaret" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                             <div >
                                                 <div class="d-flex gap-2 align-items-center">
-                                                    <div style="width: 46px ; height: 46px; border-radius: 100%">
-                                                        <img class="w-100 h-100" style="border-radius: 100%" src="{{ asset('assets/img/profile/reihannudin.png') }}" alt="profile"/>
-                                                    </div>
+{{--                                                    <div style="width: 46px ; height: 46px; border-radius: 100%">--}}
+{{--                                                        <img class="w-100 h-100" style="border-radius: 100%" src="{{ asset('assets/img/profile/reihannudin.png') }}" alt="profile"/>--}}
+{{--                                                    </div>--}}
                                                     <p class="my-auto text-dark">{{ auth()->user()->username }}</p>
                                                 </div>
                                             </div>
@@ -41,7 +41,7 @@
                                                         class="bx bx-shopping-bag"></i><span>My Purchase</span></a>
                                             </li>
                                             <li><a class="dropdown-item  py-2 cursor-pointer" style="font-size: 16px"  href=""><i
-                                                        class="bx bx-heart"></i><span>Wishlist</span></a>
+                                                        class="bx bx-cart"></i><span>Cart</span></a>
                                             </li>
                                             <li>
                                                 <div class="dropdown-divider mb-0"></div>

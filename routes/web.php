@@ -53,3 +53,7 @@ Route::controller(\App\Http\Controllers\OrderController::class)->group(function 
 Route::controller(\App\Http\Controllers\ProfileController::class)->group(function (){
     Route::get('/profile' , 'ProfileAll')->name('profile.all');
 });
+
+Route::controller(\App\Http\Controllers\PurchaseController::class)->group(function (){
+   Route::get('/purchase' , 'PurchaseAll')->name('purchase.all');
+});
