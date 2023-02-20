@@ -49,7 +49,7 @@
 <!--end header -->
 
 <!--start page wrapper -->
-<div class="col-12" style="margin: 80px 0 0;">
+<div class="col-12" style="margin: 60px 0 0;">
     @yield('content')
     {{--        <h2>This is a main page</h2>--}}
 </div>

@@ -5,7 +5,7 @@
                 <div style="height: 40px">
                     <img class="h-100" src="{{ asset('assets/img/logo/big-logo.svg') }}" alt="" />
                 </div>
-                <div class="d-flex  ms-3  me-2 mt-auto mb-1"  style="border-right: 1px solid #EEEEEE">
+                <div class="d-flex pe-2 ms-3  me-2 mt-auto mb-1"  style="border-right: 1px solid #EEEEEE">
                     <div class="d-flex">
                         <div style="height: 25px ; border-radius: 100%">
                             <img src="{{ asset('assets/img/logo/artist/bts-logo.jpg') }}" style="border-radius: 100%"   class="h-100"  alt="" />
@@ -16,46 +16,46 @@
                             <img src="{{ asset('assets/img/icons/global.svg') }}" style="border-radius: 100%" class="h-100"  alt="" />
                         </div>
                     </div>
-                    <div class="d-flex">
-                        <div class="pe-2" style="height: 25px ; border-radius: 100%">
-                            <i class="bx bxs-down-arrow font-13 my-auto" ></i>
-                        </div>
-                    </div>
+
                 </div>
-                <div class="d-flex  me-3 mt-auto mb-1"  style="border-right: 1px solid #EEEEEE">
-                    <div class="d-flex">
+                <div class="d-flex  gap-2 pe-2 me-3 mt-auto mb-1"  style="border-right: 1px solid #EEEEEE">
+                    <div class="d-flex ">
                         <div class="d-flex">
                             <div style="height: 25px ; border-radius: 100%">
                                 <span>English</span>
                             </div>
                         </div>
-                        <div class="d-flex">
-                            <div class="pe-2" style="height: 25px ; border-radius: 100%">
-                                <i class="bx bxs-down-arrow font-13 my-auto mx-1" ></i>
-                            </div>
-                        </div>
                     </div>
-                    <div class="d-flex">
+                </div>
+                <div class="d-flex  gap-2 pe-2 mt-auto mb-1"  style="border-right: 1px solid #EEEEEE">
+                    <div class="d-flex ">
                         <div class="d-flex">
                             <div style="height: 25px ; border-radius: 100%">
-                                <span>RP(Rupiah)</span>
-                            </div>
-                        </div>
-                        <div class="d-flex">
-                            <div class="pe-2" style="height: 25px ; border-radius: 100%">
-                                <i class="bx bxs-up-arrow font-13 my-auto mx-1" ></i>
+                                <span>My Wallet : IDR.500.000</span>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
             <div>
                 <div style="height: 0px">
                     <ul class="d-flex align-items-center mx-0 list-unstyled" style="height: 0px; font-size: 16px">
-                        <li><a class="cursor-pointer mx-0 text-dark" style="border-right: 1px solid #EEEEEE; padding: 0px 8px" href="{{ route('home.all') }}">Cart</a></li>
-                        <li><a class="cursor-pointer mx-0 text-dark" style="border-right: 1px solid #EEEEEE; padding: 0px 8px" href="{{ route('concert.all') }}">My Purchase</a></li>
-                        <li><a class="cursor-pointer mx-0 text-dark" style="border-right: 1px solid #EEEEEE; padding: 0px 8px" href="{{route('store.all')}}">Order Shipping</a></li>
+                        <li><a class="cursor-pointer mx-0 text-dark" style="border-right: 1px solid #EEEEEE; padding: 0px 8px" href="{{ route('cart.all') }}">Cart</a></li>
+                        <li>
+                            <div class="user-box dropdown ms-0" style="height: 36px ; border: none" >
+                                <a class="d-flex align-items-center text-dark nav-link dropdown-toggle dropdown-toggle-nocaret" style="border-right: 1px solid #EEEEEE; padding: 0px 8px" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Order Shipping
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end" style="z-index:99">
+                                    <li><a class="dropdown-item py-2  cursor-pointer" style="font-size: 15px" href=""><span style="font-size: 14px">Order History</span></a>
+                                    </li>
+                                    <li><a class="dropdown-item  py-2 cursor-pointer" style="font-size: 15px"  href=""><span style="font-size: 14px">Returns and Exchanges</span></a>
+                                    </li>
+                                    <li><a class="dropdown-item  py-2 cursor-pointer" style="font-size: 15px"  href=""><span style="font-size: 14px">Manage Address</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
                         <li><a class="cursor-pointer mx-0 text-dark" style="border-right: 1px solid #EEEEEE; padding: 0px 8px" href="{{route('store.all')}}">Announcement</a></li>
 
                         @if(is_null(auth()->user()))

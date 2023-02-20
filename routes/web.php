@@ -43,3 +43,10 @@ Route::controller(\App\Http\Controllers\ProductController::class)->group(functio
 Route::controller(\App\Http\Controllers\CartController::class)->group(function (){
     Route::get('/cart' , 'CartAll')->name('cart.all');
 });
+
+Route::controller(\App\Http\Controllers\OrderController::class)->group(function (){
+//   Route::get('/order' , 'OrderAll')->name('order.all');
+    Route::get('/order/history' , 'OrderHistory')->name('order.history');
+    Route::get('/order/return' , 'OrderReturn')->name('order.return');
+
+});
