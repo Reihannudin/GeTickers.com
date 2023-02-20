@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('artists', function (Blueprint $table) {
+        Schema::create('artists-store', function (Blueprint $table) {
             $table->id()->startingValue(13072013);
             $table->string('name')->unique();
             $table->string('slug')->required();
@@ -22,7 +22,7 @@ return new class extends Migration
             $table->string('photo');
             $table->text('description');
             $table->integer('favorite');
-
+            $table->string('popularity')->nullable();
 // not priority       $table->integer('discography_id');
 //            $table->integer('product_id');
 //            $table->integer('tour_id');
@@ -37,6 +37,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('artists');
+        Schema::dropIfExists('artists-store');
     }
 };

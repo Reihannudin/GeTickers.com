@@ -36,3 +36,6 @@ Route::controller(\App\Http\Controllers\ConcertController::class)->group(functio
     Route::get('/concert/detail/' , 'DetailConcert')->name('detail.concert');
 });
 
+Route::controller(\App\Http\Controllers\ProductController::class)->group(function (){
+    Route::get('/detail/product/' , 'ProductDetail')->name('product.detail');
+});

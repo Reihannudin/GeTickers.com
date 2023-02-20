@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('slug')->required();
             $table->string('location')->required();
             $table->date('schedule');
+            $table->string('popularity')->nullable();
             $table->unsignedBigInteger('artist_id')->required();
             $table->unsignedBigInteger('package_id')->required();
             $table->string('description');

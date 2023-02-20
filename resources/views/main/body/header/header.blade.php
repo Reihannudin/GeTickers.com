@@ -8,10 +8,10 @@
             </div>
             <div>
                 <div style="height: 0px">
-                    <ul class="d-flex align-items-center font-18 list-unstyled gap-4" style="height: 0px">
-                        <li><a class="cursor-pointer text-dark" href="{{ route('home.all') }}">Home</a></li>
-                        <li><a class="cursor-pointer text-dark" href="{{ route('concert.all') }}">Concert</a></li>
-                        <li><a class="cursor-pointer text-dark" href="{{route('store.all')}}">Store</a></li>
+                    <ul class="d-flex align-items-center mx-0 font-18 list-unstyled gap-4" style="height: 0px">
+                        <li><a class="cursor-pointer mx-0 text-dark" href="{{ route('home.all') }}">Home</a></li>
+                        <li><a class="cursor-pointer mx-0 text-dark" href="{{ route('concert.all') }}">Concert</a></li>
+                        <li><a class="cursor-pointer mx-0 text-dark" href="{{route('store.all')}}">Store</a></li>
                         @if(is_null(auth()->user()))
                             <li>
                                 <a href="{{ route('login.all') }}">
@@ -34,13 +34,13 @@
                                             </div>
                                         </a>
                                         <ul class="dropdown-menu dropdown-menu-end" style="z-index:99">
-                                            <li><a class="dropdown-item py-2 cursor-pointer" href=""><i
+                                            <li><a class="dropdown-item py-2  cursor-pointer" style="font-size: 16px" href=""><i
                                                         class="bx bx-user"></i><span>Profile</span></a>
                                             </li>
-                                            <li><a class="dropdown-item  py-2 cursor-pointer" href=""><i
+                                            <li><a class="dropdown-item  py-2 cursor-pointer" style="font-size: 16px"  href=""><i
                                                         class="bx bx-shopping-bag"></i><span>My Purchase</span></a>
                                             </li>
-                                            <li><a class="dropdown-item  py-2 cursor-pointer" href=""><i
+                                            <li><a class="dropdown-item  py-2 cursor-pointer" style="font-size: 16px"  href=""><i
                                                         class="bx bx-heart"></i><span>Wishlist</span></a>
                                             </li>
                                             <li>
@@ -49,7 +49,7 @@
                                             <li>
                                                 <form>
 
-                                                    <a class="dropdown-item  py-2 cursor-pointer" href="{{ route('logout') }}"><i
+                                                    <a class="dropdown-item  py-2 cursor-pointer"  style="font-size: 16px"  href="{{ route('logout') }}"><i
                                                             class='bx bx-log-out-circle'></i><span>Logout</span></a>
                                                 </form>
                                             </li>

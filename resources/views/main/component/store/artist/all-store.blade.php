@@ -3,13 +3,13 @@
 @section('store-content')
 
     <div class="media-29101 my-3 col-3">
-        <div class="col-12 mx-4 pb-2" style="width: 270px; height: 340px; border-radius: 12px 0px 12px 0px">
+        <div class="col-12 mx-4 pb-2" style="width: 250px; height: 370px; border-radius: 12px 0px 12px 0px">
             <div class="col-12 d-block justify-content-between w-100 h-100 mx-0 px-0 pt-0 position-relative">
                 <div class="">
                     <a href="#">
                         <div class="col-12">
-                            <img src="{{ asset('assets/img/product/merch-2-bp.webp') }}"
-                                 style="height:200px ;border-radius: 12px 0px 0px 0px ; object-fit: cover" class="w-100"
+                            <img src="{{ asset('assets/img/product/photobook/pth-bts-1.png') }}"
+                                 style="height:230px ;border-radius: 12px 0px 0px 0px ; object-fit: cover" class="w-100"
                                  alt="image"/>
                         </div>
                     </a>
@@ -33,13 +33,13 @@
         </div>
     </div>
     <div class="media-29101 my-3 col-3">
-        <div class="col-12 mx-4 pb-2" style="width: 270px; height: 340px; border-radius: 12px 0px 12px 0px">
+        <div class="col-12 mx-4 pb-2" style="width: 250px; height: 370px; border-radius: 12px 0px 12px 0px">
             <div class="col-12 d-block justify-content-between w-100 h-100 mx-0 px-0 pt-0 position-relative">
                 <div class="">
                     <a href="#">
                         <div class="col-12">
-                            <img src="{{ asset('assets/img/product/merch-2-bp.webp') }}"
-                                 style="height:200px ;border-radius: 12px 0px 0px 0px ; object-fit: cover" class="w-100"
+                            <img src="{{ asset('assets/img/product/photobook/pth-bts-2.png') }}"
+                                 style="height:230px ;border-radius: 12px 0px 0px 0px ; object-fit: cover" class="w-100"
                                  alt="image"/>
                         </div>
                     </a>
@@ -63,13 +63,13 @@
         </div>
     </div>
     <div class="media-29101 my-3 col-3">
-        <div class="col-12 mx-4 pb-2" style="width: 270px; height: 340px; border-radius: 12px 0px 12px 0px">
+        <div class="col-12 mx-4 pb-2" style="width: 250px; height: 370px; border-radius: 12px 0px 12px 0px">
             <div class="col-12 d-block justify-content-between w-100 h-100 mx-0 px-0 pt-0 position-relative">
                 <div class="">
                     <a href="#">
                         <div class="col-12">
-                            <img src="{{ asset('assets/img/product/merch-2-bp.webp') }}"
-                                 style="height:200px ;border-radius: 12px 0px 0px 0px ; object-fit: cover" class="w-100"
+                            <img src="{{ asset('assets/img/product/photobook/pth-bts-3.png') }}"
+                                 style="height:230px ;border-radius: 12px 0px 0px 0px ; object-fit: cover" class="w-100"
                                  alt="image"/>
                         </div>
                     </a>
@@ -93,13 +93,13 @@
         </div>
     </div>
     <div class="media-29101 my-3 col-3">
-        <div class="col-12 mx-4 pb-2" style="width: 270px; height: 340px; border-radius: 12px 0px 12px 0px">
+        <div class="col-12 mx-4 pb-2" style="width: 250px; height: 370px; border-radius: 12px 0px 12px 0px">
             <div class="col-12 d-block justify-content-between w-100 h-100 mx-0 px-0 pt-0 position-relative">
                 <div class="">
                     <a href="#">
                         <div class="col-12">
-                            <img src="{{ asset('assets/img/product/merch-2-bp.webp') }}"
-                                 style="height:200px ;border-radius: 12px 0px 0px 0px ; object-fit: cover" class="w-100"
+                            <img src="{{ asset('assets/img/product/photobook/pth-bts-4.png') }}"
+                                 style="height:230px ;border-radius: 12px 0px 0px 0px ; object-fit: cover" class="w-100"
                                  alt="image"/>
                         </div>
                     </a>
@@ -123,13 +123,13 @@
         </div>
     </div>
     <div class="media-29101 my-3 col-3">
-        <div class="col-12 mx-4 pb-2" style="width: 270px; height: 340px; border-radius: 12px 0px 12px 0px">
+        <div class="col-12 mx-4 pb-2" style="width: 250px; height: 370px; border-radius: 12px 0px 12px 0px">
             <div class="col-12 d-block justify-content-between w-100 h-100 mx-0 px-0 pt-0 position-relative">
                 <div class="">
                     <a href="#">
                         <div class="col-12">
-                            <img src="{{ asset('assets/img/product/merch-2-bp.webp') }}"
-                                 style="height:200px ;border-radius: 12px 0px 0px 0px ; object-fit: cover" class="w-100"
+                            <img src="{{ asset('assets/img/product/photobook/pth-bts-5.png') }}"
+                                 style="height:230px ;border-radius: 12px 0px 0px 0px ; object-fit: cover" class="w-100"
                                  alt="image"/>
                         </div>
                     </a>
@@ -153,13 +153,13 @@
         </div>
     </div>
     <div class="media-29101 my-3 col-3">
-        <div class="col-12 mx-4 pb-2" style="width: 270px; height: 340px; border-radius: 12px 0px 12px 0px">
+        <div class="col-12 mx-4 pb-2" style="width: 250px; height: 370px; border-radius: 12px 0px 12px 0px">
             <div class="col-12 d-block justify-content-between w-100 h-100 mx-0 px-0 pt-0 position-relative">
                 <div class="">
                     <a href="#">
                         <div class="col-12">
-                            <img src="{{ asset('assets/img/product/merch-2-bp.webp') }}"
-                                 style="height:200px ;border-radius: 12px 0px 0px 0px ; object-fit: cover" class="w-100"
+                            <img src="{{ asset('assets/img/product/photobook/pth-bts-6.png') }}"
+                                 style="height:230px ;border-radius: 12px 0px 0px 0px ; object-fit: cover" class="w-100"
                                  alt="image"/>
                         </div>
                     </a>
@@ -183,13 +183,13 @@
         </div>
     </div>
     <div class="media-29101 my-3 col-3">
-        <div class="col-12 mx-4 pb-2" style="width: 270px; height: 340px; border-radius: 12px 0px 12px 0px">
+        <div class="col-12 mx-4 pb-2" style="width: 250px; height: 370px; border-radius: 12px 0px 12px 0px">
             <div class="col-12 d-block justify-content-between w-100 h-100 mx-0 px-0 pt-0 position-relative">
                 <div class="">
                     <a href="#">
                         <div class="col-12">
-                            <img src="{{ asset('assets/img/product/merch-2-bp.webp') }}"
-                                 style="height:200px ;border-radius: 12px 0px 0px 0px ; object-fit: cover" class="w-100"
+                            <img src="{{ asset('assets/img/product/photobook/pth-bts-7.png') }}"
+                                 style="height:230px ;border-radius: 12px 0px 0px 0px ; object-fit: cover" class="w-100"
                                  alt="image"/>
                         </div>
                     </a>
@@ -212,5 +212,4 @@
             </div>
         </div>
     </div>
-
 @endsection

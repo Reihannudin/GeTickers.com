@@ -17,9 +17,10 @@ return new class extends Migration
             $table->id()->startingValue(13072013)->unique();
             $table->string('name');
             $table->string('slug')->required();
-            $table->decimal('price')->nullable();
-            $table->string('description');
+            $table->decimal('price');
+            $table->string('description')->nullable();
             $table->string('product_image');
+            $table->string('popularity')->nullable();
             $table->string('product_desc_img')->nullable();
             $table->bigInteger('information_id')->nullable();
             $table->bigInteger('notification_id')->nullable();

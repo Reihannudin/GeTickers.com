@@ -17,13 +17,17 @@
                                             <div style="height: 15px">
                                                 <img src="{{ asset('assets/img/icons/global.svg') }}" class="h-100"  alt="" />
                                             </div>
-                                            <h6 style="margin-top: 1px ; margin-right: 8px">GLOBAL</h6>
+                                            <a href="{{ route('store.artist.all') }}">
+                                                <h6 style="margin-top: 1px ; margin-right: 8px">GLOBAL</h6>
+                                            </a>
                                         </div>
                                         <div class="d-flex gap-1">
                                             <div style="height: 15px">
                                                 <img src="{{ asset('assets/img/icons/indonesia-flag.svg') }}" class="h-100" alt="" />
                                             </div>
-                                            <h6 style="margin-top: 1px">INDONESIA</h6>
+                                            <a href="{{ route('store.artist.all') }}">
+                                                <h6 style="margin-top: 1px">INDONESIA</h6>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
