@@ -39,3 +39,7 @@ Route::controller(\App\Http\Controllers\ConcertController::class)->group(functio
 Route::controller(\App\Http\Controllers\ProductController::class)->group(function (){
     Route::get('/detail/product/' , 'ProductDetail')->name('product.detail');
 });
+
+Route::controller(\App\Http\Controllers\CartController::class)->group(function (){
+    Route::get('/cart' , 'CartAll')->name('cart.all');
+});

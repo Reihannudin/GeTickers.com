@@ -1,4 +1,4 @@
-@extends('main.index-product')
+@extends('main.index-store-artists')
 
 @section('content')
 <section class="bg-white py-5 bg-12">
