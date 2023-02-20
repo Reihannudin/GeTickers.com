@@ -48,5 +48,8 @@ Route::controller(\App\Http\Controllers\OrderController::class)->group(function 
 //   Route::get('/order' , 'OrderAll')->name('order.all');
     Route::get('/order/history' , 'OrderHistory')->name('order.history');
     Route::get('/order/return' , 'OrderReturn')->name('order.return');
+});
 
+Route::controller(\App\Http\Controllers\ProfileController::class)->group(function (){
+    Route::get('/profile' , 'ProfileAll')->name('profile.all');
 });
